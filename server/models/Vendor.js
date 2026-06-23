@@ -1,0 +1,3 @@
+const mongoose = require('mongoose');
+const vendorSchema = new mongoose.Schema({ userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true, unique: true }, shopName: { type: String, required: true, trim: true }, shopDescription: String, shopLogo: String, gstNumber: String, fssaiNumber: String, panNumber: String, bankDetails: { accountNo: String, ifsc: String, holderName: String }, isApproved: { type: Boolean, default: false }, commissionRate: { type: Number, default: 10 }, totalEarnings: { type: Number, default: 0 }, rating: { type: Number, default: 0 }, totalReviews: { type: Number, default: 0 } }, { timestamps: true });
+module.exports = mongoose.model('Vendor', vendorSchema);

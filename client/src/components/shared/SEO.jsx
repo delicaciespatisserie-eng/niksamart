@@ -1,0 +1,2 @@
+import { Helmet } from 'react-helmet-async';
+export default function SEO({ title = 'Niksa Mart', description = 'Niksa Mart multi-vendor ecommerce marketplace for pure A2 Desi Cow Ghee and trusted products.' }) { return <Helmet><title>{title}</title><meta name="description" content={description} /><meta property="og:title" content={title} /><meta property="og:description" content={description} /></Helmet>; }

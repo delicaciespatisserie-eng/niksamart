@@ -1,0 +1,9 @@
+import { yupResolver } from '@hookform/resolvers/yup';
+import { useForm } from 'react-hook-form';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import * as yup from 'yup';
+import { useRegisterMutation } from '../../store/api/authApi';
+import { setCredentials } from '../../store/slices/authSlice';
+const schema = yup.object({ name: yup.string().required(), email: yup.string().email().required(), phone: yup.string().min(10).required(), password: yup.string().min(6).required(), role: yup.string().required() });
+export default function Register() { const { register, handleSubmit, formState:{errors} } = useForm({ resolver: yupResolver(schema), defaultValues:{role:'customer'} }); const [registerUser,{isLoading,error}] = useRegisterMutation(); const dispatch = useDispatch(); const nav = useNavigate(); const submit = async (values) => { const data = await registerUser(values).unwrap(); dispatch(setCredentials(data)); nav('/'); }; return <main className="mx-auto max-w-lg px-4 py-16"><h1 className="font-heading text-5xl text-navy">Create Account</h1><form onSubmit={handleSubmit(submit)} className="card mt-6 grid gap-4 p-6"><input className="input" placeholder="Name" {...register('name')} /><input className="input" placeholder="Email" {...register('email')} /><input className="input" placeholder="Phone" {...register('phone')} /><input className="input" type="password" placeholder="Password" {...register('password')} /><select className="input" {...register('role')}><option value="customer">Customer</option><option value="vendor">Vendor</option></select>{Object.values(errors)[0] && <p className="text-sm text-red-600">Please complete all required fields correctly.</p>}{error && <p className="text-sm text-red-600">{error.data?.message}</p>}<button disabled={isLoading} className="btn-gold">{isLoading?'Creating...':'Register'}</button></form></main>; }

@@ -1,0 +1,13 @@
+const router = require('express').Router();
+const admin = require('../controllers/admin.controller');
+const { protect } = require('../middleware/auth.middleware');
+const { authorize } = require('../middleware/role.middleware');
+router.use(protect, authorize('admin', 'superadmin'));
+router.get('/stats', admin.stats);
+router.get('/vendors', admin.vendors);
+router.put('/vendors/:id/approve', admin.approveVendor);
+router.get('/orders', admin.orders);
+router.get('/users', admin.users);
+router.put('/users/:id/block', admin.blockUser);
+router.put('/users/:id/role', admin.updateRole);
+module.exports = router;

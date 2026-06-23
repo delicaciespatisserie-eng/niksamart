@@ -1,0 +1,10 @@
+# NiksaMart robots.txt
+User-agent: *
+Allow: /
+Disallow: /thankyou.html
+Disallow: /razorpay-checkout.html
+
+Sitemap: https://www.niksamart.com/sitemap.xml
+
+# Crawl-delay for respectful indexing
+Crawl-delay: 2

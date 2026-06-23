@@ -1,0 +1,13 @@
+const router = require('express').Router();
+const vendor = require('../controllers/vendor.controller');
+const { protect } = require('../middleware/auth.middleware');
+const { authorize } = require('../middleware/role.middleware');
+router.use(protect);
+router.get('/me', authorize('vendor', 'admin'), vendor.me);
+router.post('/profile', authorize('vendor', 'admin'), vendor.createOrUpdateVendor);
+router.get('/dashboard', authorize('vendor', 'admin'), vendor.dashboard);
+router.get('/products', authorize('vendor', 'admin'), vendor.products);
+router.get('/orders', authorize('vendor', 'admin'), vendor.orders);
+router.put('/orders/:id/status', authorize('vendor', 'admin'), vendor.updateOrderStatus);
+router.get('/earnings', authorize('vendor', 'admin'), vendor.earnings);
+module.exports = router;

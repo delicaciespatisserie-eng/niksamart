@@ -1,0 +1,9 @@
+import { useSearchParams } from 'react-router-dom';
+import ProductFilter from '../../components/product/ProductFilter';
+import ProductGrid from '../../components/product/ProductGrid';
+import SEO from '../../components/shared/SEO';
+import { useGetProductsQuery } from '../../store/api/productApi';
+function getProducts(data) { return data?.products || data?.data || []; }
+function getCount(data) { return data?.count || data?.pagination?.total || 0; }
+function getPages(data) { return data?.pages || data?.pagination?.pages || 1; }
+export default function ProductListing() { const [params, setParams] = useSearchParams(); const query = params.toString() ? `?${params.toString()}` : ''; const { data, isLoading } = useGetProductsQuery(query); const setParam = (k, v) => { const next = new URLSearchParams(params); v ? next.set(k, v) : next.delete(k); setParams(next); }; return <main className="mx-auto max-w-7xl px-4 py-10"><SEO title="Products | Niksa Mart" /><div className="flex flex-col gap-6 lg:flex-row"><div className="lg:w-72"><ProductFilter params={params} setParam={setParam} /></div><section className="flex-1"><div className="mb-5 flex flex-wrap items-center justify-between gap-3"><h1 className="font-heading text-4xl text-navy">{getCount(data)} products found</h1><select className="input max-w-48" value={params.get('sort') || 'newest'} onChange={e => setParam('sort', e.target.value)}><option value="newest">Newest</option><option value="price">Price</option><option value="rating">Rating</option></select></div><ProductGrid products={getProducts(data)} isLoading={isLoading} /><div className="mt-8 flex justify-center gap-2">{Array.from({ length: getPages(data) }).map((_, i) => <button key={i} className="rounded border px-3 py-2 text-navy" onClick={() => setParam('page', String(i + 1))}>{i + 1}</button>)}</div></section></div></main>; }

@@ -1,0 +1,10 @@
+import { configureStore } from '@reduxjs/toolkit';
+import authReducer from './slices/authSlice';
+import cartReducer from './slices/cartSlice';
+import wishlistReducer from './slices/wishlistSlice';
+import uiReducer from './slices/uiSlice';
+import { authApi } from './api/authApi';
+import { productApi } from './api/productApi';
+import { orderApi } from './api/orderApi';
+import { vendorApi } from './api/vendorApi';
+export const store = configureStore({ reducer: { auth: authReducer, cart: cartReducer, wishlist: wishlistReducer, ui: uiReducer, [authApi.reducerPath]: authApi.reducer, [productApi.reducerPath]: productApi.reducer, [orderApi.reducerPath]: orderApi.reducer, [vendorApi.reducerPath]: vendorApi.reducer }, middleware: (gDM) => gDM().concat(authApi.middleware, productApi.middleware, orderApi.middleware, vendorApi.middleware) });

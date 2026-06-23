@@ -1,0 +1,3 @@
+import ProductCard from './ProductCard';
+import SkeletonCard from '../shared/SkeletonCard';
+export default function ProductGrid({ products = [], isLoading = false }) { if (isLoading) return <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">{Array.from({ length: 6 }).map((_, i) => <SkeletonCard key={i} />)}</div>; if (!products.length) return <div className="rounded-lg border border-dashed p-10 text-center text-gray-500">No products found. Fresh batches are on the way.</div>; return <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">{products.map(p => <ProductCard key={p._id} product={p} />)}</div>; }

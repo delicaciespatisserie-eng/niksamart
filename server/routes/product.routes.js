@@ -1,0 +1,13 @@
+const router = require('express').Router();
+const product = require('../controllers/product.controller');
+const { protect } = require('../middleware/auth.middleware');
+const { authorize } = require('../middleware/role.middleware');
+const upload = require('../middleware/upload.middleware');
+router.get('/', product.getProducts);
+router.get('/featured', product.getFeatured);
+router.get('/category/:category', product.getByCategory);
+router.get('/:slug', product.getBySlug);
+router.post('/', protect, authorize('vendor', 'admin'), upload.array('images', 6), product.createProduct);
+router.put('/:id', protect, authorize('vendor', 'admin'), product.updateProduct);
+router.delete('/:id', protect, authorize('vendor', 'admin'), product.deleteProduct);
+module.exports = router;

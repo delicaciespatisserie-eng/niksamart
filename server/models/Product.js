@@ -1,0 +1,6 @@
+const mongoose = require('mongoose');
+const slugify = (v) => String(v || '').toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const productSchema = new mongoose.Schema({ vendorId: { type: mongoose.Schema.Types.ObjectId, ref: 'Vendor', required: true }, name: { type: String, required: true, trim: true }, slug: { type: String, unique: true }, description: { type: String, required: true }, shortDescription: String, category: { type: String, required: true, index: true }, subCategory: String, tags: [String], images: [String], thumbnail: String, price: { type: Number, required: true }, salePrice: { type: Number, required: true }, costPrice: Number, stock: { type: Number, default: 0 }, unit: { type: String, enum: ['grams', 'kg', 'piece', 'litre'], default: 'piece' }, weight: Number, isActive: { type: Boolean, default: true }, isFeatured: { type: Boolean, default: false }, rating: { type: Number, default: 0 }, totalReviews: { type: Number, default: 0 }, variants: [{ name: String, price: Number, stock: Number }] }, { timestamps: true });
+productSchema.pre('validate', function(next) { if (!this.slug && this.name) this.slug = slugify(this.name); next(); });
+productSchema.index({ name: 'text', description: 'text', tags: 'text' });
+module.exports = mongoose.model('Product', productSchema);

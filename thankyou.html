@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth;">
+<head>
+  <title>Thank You | NiksaMart – Premium Wellness</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="NIKSAMART">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+
+  <style>
+    body { font-family: 'Open Sans', sans-serif; background: #0a0a0a; color: #e5e5e5; margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+    h1,h2,h3,h4,h5,h6 { font-family: 'Nunito', sans-serif; }
+    .navbar-dark .nav-link { color: #fff; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; font-size: 14px; transition: color 0.3s; }
+    .navbar-dark .nav-link:hover { color: #d4af37; }
+
+    .thankyou-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      background: linear-gradient(145deg, #1a1a1a, #050505);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .thankyou-container::before {
+      content: '';
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(212,175,55,0.1), transparent 70%);
+      border-radius: 50%;
+      top: -200px;
+      right: -200px;
+      pointer-events: none;
+    }
+
+    .thankyou-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      animation: slideUp 0.8s ease-out;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 24px;
+      padding: 60px 40px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .thank-you-icon {
+      font-size: 80px;
+      margin-bottom: 24px;
+      color: #d4af37;
+      animation: scaleIn 0.6s ease-out;
+    }
+
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.5); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .thankyou-title {
+      font-size: 42px;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .thankyou-subtitle {
+      font-size: 18px;
+      color: #a3a3a3;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .thankyou-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 48px;
+      background: linear-gradient(135deg, #d4af37, #b58d1f);
+      color: #0a0a0a;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 900;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(212,175,55,0.3);
+      border: none;
+    }
+
+    .thankyou-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(212,175,55,0.4);
+      color: #0a0a0a;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark border-bottom" style="background:#111; border-color:#333 !important;" role="navigation">
+    <div class="container-fluid px-4 py-2">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="images/logo.png" alt="NiksaMart - Premium Wellness" style="max-height:45px;" width="160" height="45">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#categories">Shop All</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#blog">Wellness Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="inquiry.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-flex gap-3 align-items-center">
+        <a href="inquiry.html" style="color:#d4af37; font-size:22px;"><iconify-icon icon="mdi:heart-outline"></iconify-icon></a>
+        <a href="inquiry.html" style="color:#d4af37; font-size:22px;"><iconify-icon icon="mdi:cart-outline"></iconify-icon></a>
+        <a href="inquiry.html" style="color:#d4af37; font-size:22px;"><iconify-icon icon="mdi:account-outline"></iconify-icon></a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="thankyou-container">
+  <div class="thankyou-content">
+    <div class="thank-you-icon">
+      <iconify-icon icon="mdi:check-decagram"></iconify-icon>
+    </div>
+    
+    <h1 class="thankyou-title">Thank You!</h1>
+    
+    <p class="thankyou-subtitle">
+      Your inquiry has been successfully received. A member of the NiksaMart team will get back to you shortly with our premium wellness offerings.
+    </p>
+
+    <div style="display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+      <a href="index.html" class="thankyou-button">
+        Return Home
+      </a>
+      <a href="index.html#categories" style="display:inline-flex;align-items:center;justify-content:center;padding:16px 48px;background:transparent;border:2px solid #d4af37;color:#d4af37;text-decoration:none;border-radius:30px;font-weight:800;font-size:16px;text-transform:uppercase;letter-spacing:1px;transition:all .3s ease;" onmouseover="this.style.background='rgba(212,175,55,0.1)';" onmouseout="this.style.background='transparent';">
+        Explore Products
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-4" style="background:#111; border-top:1px solid #333;">
+  <div class="container text-center">
+    <p style="color:#737373; font-size:14px; margin:0;">&copy; 2025 NiksaMart. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

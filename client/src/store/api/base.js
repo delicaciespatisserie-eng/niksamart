@@ -1,0 +1,4 @@
+import { fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { logout, setCredentials } from '../slices/authSlice';
+const raw = fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_URL || '/api', credentials: 'include', prepareHeaders: (headers, { getState }) => { headers.set('x-requested-with', 'XMLHttpRequest'); const token = getState().auth.token; if (token) headers.set('authorization', `Bearer ${token}`); return headers; } });
+export const baseQueryWithReauth = async (args, api, extraOptions) => { let result = await raw(args, api, extraOptions); if (result.error?.status === 401) { const refresh = await raw({ url: '/auth/refresh-token', method: 'POST' }, api, extraOptions); if (refresh.data?.accessToken) { api.dispatch(setCredentials({ user: api.getState().auth.user, accessToken: refresh.data.accessToken })); result = await raw(args, api, extraOptions); } else { api.dispatch(logout()); } } return result; };

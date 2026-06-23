@@ -1,0 +1,12 @@
+const router = require('express').Router();
+const order = require('../controllers/order.controller');
+const { protect } = require('../middleware/auth.middleware');
+const { authorize } = require('../middleware/role.middleware');
+router.post('/create', protect, authorize('customer', 'admin'), order.createOrder);
+router.post('/verify-payment', protect, order.verifyPayment);
+router.get('/my-orders', protect, authorize('customer', 'admin'), order.myOrders);
+router.get('/:id/invoice', protect, order.invoice);
+router.put('/:id/cancel', protect, order.cancelOrder);
+router.put('/:id/deliver', protect, authorize('vendor', 'admin'), order.deliverOrder);
+router.get('/:orderNumber', protect, order.getOrder);
+module.exports = router;

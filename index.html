@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior:smooth;">
+  <head>
+    <title>NiksaMart – Premium A2 Bilona Ghee & Wellness Heritage</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="NIKSAMART">
+
+    <!-- ✅ IMPROVEMENT 1: Proper SEO Meta Tags -->
+    <meta name="description" content="Discover NiksaMart's premium range of A2 Bilona Ghee, Raw Honey, and traditional wellness products. Crafted with purity and heritage.">
+    <meta name="keywords" content="premium wellness, A2 bilona ghee, pure honey, cold pressed oils, traditional indian superfoods, D2C wellness, NiksaMart">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.niksamart.com/">
+
+    <!-- ✅ IMPROVEMENT 2: Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="NiksaMart – Premium A2 Bilona Ghee & Wellness">
+    <meta property="og:description" content="Experience the authentic taste of tradition. Shop our pure, lab-tested Vedic wellness products direct to your home.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.niksamart.com/">
+    <meta property="og:image" content="https://www.niksamart.com/images/logo.png">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NiksaMart – Premium Wellness Heritage">
+    <meta name="twitter:description" content="Pure A2 Bilona Ghee and traditional superfoods. Elevate your wellness journey.">
+
+    <!-- ✅ IMPROVEMENT 3: JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "NiksaMart",
+      "url": "https://www.niksamart.com",
+      "logo": "https://www.niksamart.com/images/logo.png",
+      "description": "Premium Direct-to-Consumer Wellness Brand specializing in A2 Bilona Ghee and traditional Indian superfoods.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-NIKSAMART",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Hindi"]
+      },
+      "sameAs": [
+        "https://www.facebook.com/niksamart",
+        "https://www.instagram.com/niksamart",
+        "https://www.youtube.com/niksamart"
+      ]
+    }
+    </script>
+
+    <style>
+      html { scroll-behavior: smooth; }
+
+      .search-bar {
+        border: 2px solid #e5e7eb !important;
+        box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1) !important;
+        transition: all 0.3s ease;
+      }
+      .search-bar:focus-within {
+        border-color: #667eea !important;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2) !important;
+      }
+      .form-select { font-weight: 600 !important; color: #1f2937 !important; }
+      .form-select option { color: #374151; padding: 8px; }
+      .form-control::placeholder { color: #9ca3af !important; font-weight: 500; }
+
+      @media (max-width: 991px) {
+        .container-fluid .row > div { margin-bottom: 0 !important; }
+      }
+      #search-input:focus {
+        border-color: #667eea !important;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+      }
+      .form-select {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231f2937' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        padding-right: 40px !important;
+      }
+      .form-select:focus {
+        border-color: #667eea !important;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+      }
+
+      /* ✅ IMPROVEMENT 4: WhatsApp Floating Button */
+      .whatsapp-float {
+        position: fixed;
+        width: 56px;
+        height: 56px;
+        bottom: 90px;
+        right: 24px;
+        background: #25D366;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 28px;
+        box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        animation: pulse-whatsapp 2s infinite;
+      }
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+        color: #fff;
+      }
+      @keyframes pulse-whatsapp {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+        70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      }
+      .whatsapp-tooltip {
+        position: absolute;
+        right: 65px;
+        background: #333;
+        color: #fff;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+      }
+      .whatsapp-float:hover .whatsapp-tooltip { opacity: 1; }
+
+      /* ✅ IMPROVEMENT 5: Back to Top Button */
+      #backToTop {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        width: 44px;
+        height: 44px;
+        background: #1e40af;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        z-index: 9998;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(30,64,175,0.35);
+        transition: all 0.3s ease;
+      }
+      #backToTop:hover { background: #1e3a8a; transform: translateY(-3px); }
+      #backToTop.show { display: flex; }
+
+      /* ✅ IMPROVEMENT 6: Mobile Search Bar */
+      .mobile-search-bar {
+        padding: 12px 16px;
+        background: #f9fafb;
+        border-top: 1px solid #e5e7eb;
+        display: none;
+      }
+      @media (max-width: 991px) {
+        .mobile-search-bar { display: block; }
+      }
+
+      /* ✅ Form validation visual feedback */
+      .was-validated .form-control:invalid { border-color: #dc3545; }
+      .was-validated .form-control:valid { border-color: #198754; }
+
+      /* Toast notification */
+      .toast-notify {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #10b981;
+        color: white;
+        padding: 14px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        z-index: 99999;
+        transform: translateX(120%);
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        box-shadow: 0 4px 16px rgba(16,185,129,0.4);
+      }
+      .toast-notify.show { transform: translateX(0); }
+
+      /* Category responsive styles */
+      @media (max-width: 1199px) { .cat-card { padding: 36px !important; } .cat-card h3 { font-size: 22px !important; } }
+      @media (max-width: 991px) { .cat-card { padding: 32px !important; } .cat-card h3 { font-size: 20px !important; } .cat-card ul li { font-size: 14px !important; } }
+      @media (max-width: 768px) { section { padding: 80px 20px !important; } h2 { font-size: 40px !important; } .cat-card { padding: 28px !important; } }
+
+      /* ✅ FIX: Hero section mobile responsiveness */
+      @media (max-width: 1024px) {
+        section[style*="grid-template-columns:1fr 1fr"] { display: block !important; }
+      }
+      @media (max-width: 768px) {
+        section[style*="min-height:760px"] { min-height: auto !important; padding: 60px 16px !important; }
+        section[style*="min-height:760px"] h1 { font-size: 32px !important; }
+        section[style*="min-height:760px"] p { font-size: 16px !important; }
+        section[style*="min-height:760px"] > div[style*="grid-template-columns"] {
+          grid-template-columns: 1fr !important;
+          gap: 40px !important;
+        }
+        section[style*="min-height:760px"] a[style*="padding:48px"] {
+          padding: 28px !important;
+        }
+      }
+      @media (max-width: 480px) {
+        section[style*="min-height:760px"] h1 { font-size: 26px !important; line-height: 1.2 !important; }
+        section[style*="min-height:760px"] a[style*="padding:20px 54px"] { padding: 16px 28px !important; font-size: 14px !important; }
+      }
+      /* ✅ FIX: Inquiry form mobile padding */
+      @media (max-width: 768px) {
+        .inquiry-form-wrapper { padding: 30px 20px !important; }
+      }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" href="images/favicon.svg">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="images/logo.png" as="image">
+    <link rel="preload" href="style.css" as="style">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- ✅ IMPROVEMENT 7: Iconify Script (was missing — cart icons were broken) -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+  </head>
+  <body>
+
+    <!-- ✅ IMPROVEMENT 8: Toast Notification -->
+    <div class="toast-notify" id="toastNotify">✅ Done!</div>
+
+    <!-- ✅ IMPROVEMENT 9: WhatsApp Floating Button -->
+    <a href="https://wa.me/919999999999?text=Hello%20NiksaMart,%20I%20am%20interested%20in%20your%20premium%20wellness%20products" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chat on WhatsApp">
+      <span class="whatsapp-tooltip">Chat with us</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.853L.073 23.927 6.29 22.49A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 0 1-5.003-1.373l-.36-.214-3.732.979.997-3.638-.235-.374A9.797 9.797 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/>
+      </svg>
+    </a>
+
+    <!-- ✅ IMPROVEMENT 10: Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top" title="Back to top">▲</button>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <defs>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="link" viewBox="0 0 24 24"><path fill="currentColor" d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 24 24"><path fill="currentColor" d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="category" viewBox="0 0 24 24"><path fill="currentColor" d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="heart" viewBox="0 0 24 24"><path fill="currentColor" d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24"><path fill="currentColor" d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24"><path fill="currentColor" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 24 24"><path fill="currentColor" d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="check" viewBox="0 0 24 24"><path fill="currentColor" d="M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="trash" viewBox="0 0 24 24"><path fill="currentColor" d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15"><path fill="currentColor" d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24"><path fill="currentColor" d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z"/></symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 15 15"><path fill="currentColor" d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z"/></symbol>
+      </defs>
+    </svg>
+
+    <div class="preloader-wrapper">
+      <div class="preloader"></div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch" aria-labelledby="Search">
+      <div class="offcanvas-header justify-content-center">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Search</span>
+          </h4>
+          <form role="search" action="index.html" method="get" class="d-flex mt-3 gap-0">
+            <input class="form-control rounded-start rounded-0 bg-light" type="text" placeholder="Search wellness products..." aria-label="Search products">
+            <button class="btn btn-dark rounded-end rounded-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Slim Bar (Dark Premium) -->
+    <div style="background:#0a0a0a;border-bottom:1px solid #333;padding:12px 0;">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start">
+            <span style="font-size:13px;color:#d4af37;font-weight:600;letter-spacing:1px;text-transform:uppercase;">✨ Premium Indian Wellness & Traditional Superfoods</span>
+          </div>
+          <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+            <span style="font-size:13px;color:#a3a3a3;font-weight:500;">📞 24/7 Customer Service</span>
+            <a href="tel:+18009999688" style="margin-left:16px;font-size:15px;color:#f3e5ab;font-weight:bold;text-decoration:none;letter-spacing:0.5px;">+1-800-NIKSAMART</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container-fluid">
+        <div class="row py-3 align-items-center">
+          <!-- Left: Logo -->
+          <div class="col-lg-2 text-center text-lg-start">
+            <div class="main-logo">
+              <a href="index.html">
+                <!-- ✅ IMPROVEMENT 11: Added width/height attributes for CLS performance -->
+                <img src="images/logo.png" alt="NiksaMart - Premium Wellness" class="img-fluid" style="max-height:50px;" width="180" height="50">
+              </a>
+            </div>
+          </div>
+
+          <!-- Center: Premium Ecommerce Search -->
+          <div class="col-lg-7 d-none d-lg-block">
+            <div style="display:flex;gap:0;align-items:center;background:#1a1a1a;border:1px solid #333;border-radius:30px;padding:4px;box-shadow:0 4px 15px rgba(0,0,0,0.5);">
+              <select class="form-select" id="category-select" style="max-width:180px;border:none;border-right:1px solid #333;border-radius:26px 0 0 26px;padding:12px 16px;font-weight:600;color:#e5e5e5;background:transparent;cursor:pointer;" aria-label="Select wellness category">
+                <option style="color:#000" selected>✨ All Collections</option>
+                <optgroup label="━━ Premium Wellness ━━" style="color:#d4af37;font-weight:bold;background:#111;">
+                  <option style="color:#fff">🐄 A2 Bilona Ghee</option>
+                  <option style="color:#fff">🍯 Raw Forest Honey</option>
+                  <option style="color:#fff">🫒 Cold Pressed Oils</option>
+                  <option style="color:#fff">🥜 Organic Dry Fruits</option>
+                  <option style="color:#fff">🌿 Ayurvedic Wellness</option>
+                  <option style="color:#fff">🍵 Herbal Teas</option>
+                </optgroup>
+              </select>
+
+              <div style="position:relative;flex:1;">
+                <input type="text" id="search-input" class="form-control" 
+                       placeholder="Search A2 Ghee, Raw Honey, Cold Pressed Oils..." 
+                       style="border:none;padding:12px 16px;font-size:15px;background:transparent;color:#fff;box-shadow:none;outline:none;"
+                       autocomplete="off"
+                       aria-label="Search wellness products" />
+              </div>
+
+              <button id="searchBtn" style="padding:12px 32px;background:linear-gradient(135deg, #d4af37, #b58d1f);color:#0a0a0a;border:none;border-radius:26px;font-weight:800;cursor:pointer;white-space:nowrap;font-size:15px;transition:all 0.3s ease;text-transform:uppercase;letter-spacing:1px;" 
+                      onmouseover="this.style.boxShadow='0 0 20px rgba(212,175,55,0.4)';this.style.transform='scale(1.02)';" 
+                      onmouseout="this.style.boxShadow='none';this.style.transform='scale(1)';"
+                      aria-label="Search">Search</button>
+            </div>
+          </div>
+
+          <!-- Right: User Actions -->
+          <div class="col-lg-3 d-flex justify-content-end gap-3 align-items-center">
+            <a href="inquiry.html" style="width:44px;height:44px;border-radius:50%;background:#1a1a1a;border:1px solid #333;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;color:#d4af37;" onmouseover="this.style.background='#333';this.style.color='#f3e5ab';" onmouseout="this.style.background='#1a1a1a';this.style.color='#d4af37';" aria-label="Wishlist">
+              <iconify-icon icon="mdi:heart-outline" width="22"></iconify-icon>
+            </a>
+            <a href="inquiry.html" style="width:44px;height:44px;border-radius:50%;background:#1a1a1a;border:1px solid #333;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;color:#d4af37;position:relative;" onmouseover="this.style.background='#333';this.style.color='#f3e5ab';" onmouseout="this.style.background='#1a1a1a';this.style.color='#d4af37';" aria-label="Shopping Cart">
+              <iconify-icon icon="mdi:cart-outline" width="22"></iconify-icon>
+              <span style="position:absolute;top:-5px;right:-5px;background:#d4af37;color:#0a0a0a;font-size:11px;font-weight:bold;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;">0</span>
+            </a>
+            <a href="inquiry.html" style="width:44px;height:44px;border-radius:50%;background:#1a1a1a;border:1px solid #333;display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;color:#d4af37;" onmouseover="this.style.background='#333';this.style.color='#f3e5ab';" onmouseout="this.style.background='#1a1a1a';this.style.color='#d4af37';" aria-label="User Account">
+              <iconify-icon icon="mdi:account-outline" width="22"></iconify-icon>
+            </a>
+          </div>
+
+          <!-- Mobile Menu Toggle -->
+          <div class="col-12 d-lg-none d-flex justify-content-between align-items-center mt-3">
+            <a href="index.html#categories" style="padding:12px 20px;background:linear-gradient(135deg, #d4af37, #b58d1f);color:#0a0a0a;border:none;border-radius:8px;font-weight:800;text-decoration:none;font-size:14px;text-transform:uppercase;">🛒 Shop Now</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Search Bar -->
+      <div class="mobile-search-bar d-lg-none px-3 pb-3">
+        <div style="display:flex;gap:8px;background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:4px;">
+          <input type="text" id="mobile-search-input" class="form-control" placeholder="Search wellness products..." style="border:none;background:transparent;color:#fff;padding:10px 14px;font-size:14px;box-shadow:none;" aria-label="Mobile search">
+          <button style="padding:10px 18px;background:linear-gradient(135deg, #d4af37, #b58d1f);color:#0a0a0a;border:none;border-radius:6px;font-weight:800;cursor:pointer;font-size:13px;white-space:nowrap;text-transform:uppercase;">Search</button>
+        </div>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="navbar navbar-expand-lg border-top" style="background:#050505;border-color:#333 !important;" role="navigation" aria-label="Main navigation">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" style="background:#111;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header border-bottom border-secondary">
+              <h5 class="offcanvas-title" style="color:#d4af37;font-weight:900;" id="offcanvasNavbarLabel">NIKSAMART</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center menu-list list-unstyled d-flex gap-md-4 mb-0 w-100" style="font-weight:600;letter-spacing:0.5px;text-transform:uppercase;font-size:14px;">
+                <li class="nav-item active"><a href="index.html" class="nav-link" style="color:#d4af37;">Home</a></li>
+                <li class="nav-item"><a href="index.html#categories" class="nav-link" style="color:#fff;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='#fff'">Shop All</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="color:#fff;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='#fff'" role="button" id="collectionsMenu" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Collections</a>
+                  <ul class="dropdown-menu" style="background:#1a1a1a;border:1px solid #333;" aria-labelledby="collectionsMenu">
+                    <li><a class="dropdown-item" style="color:#ddd;" onmouseover="this.style.color='#d4af37';this.style.background='transparent';" onmouseout="this.style.color='#ddd';" href="index.html#categories">🐄 Niksa Bilona Gold Ghee</a></li>
+                    <li><a class="dropdown-item" style="color:#ddd;" onmouseover="this.style.color='#d4af37';this.style.background='transparent';" onmouseout="this.style.color='#ddd';" href="index.html#categories">🍯 Raw Forest Honey</a></li>
+                    <li><a class="dropdown-item" style="color:#ddd;" onmouseover="this.style.color='#d4af37';this.style.background='transparent';" onmouseout="this.style.color='#ddd';" href="index.html#categories">🫒 Cold Pressed Oils</a></li>
+                    <li><a class="dropdown-item" style="color:#ddd;" onmouseover="this.style.color='#d4af37';this.style.background='transparent';" onmouseout="this.style.color='#ddd';" href="index.html#categories">🌿 Ayurvedic Wellness</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="about.html" class="nav-link" style="color:#fff;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='#fff'">Our Story</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link" style="color:#fff;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='#fff'">Bilona Process</a></li>
+                <li class="nav-item"><a href="index.html#blog" class="nav-link" style="color:#fff;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='#fff'">Wellness Blog</a></li>
+                <li class="nav-item"><a href="inquiry.html" class="nav-link" style="color:#fff;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='#fff'">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- PREMIUM HERO SECTION -->
+    <section style="background:#0a0a0a;padding:140px 30px;position:relative;overflow:hidden;min-height:800px;display:flex;align-items:center;border-bottom:1px solid #222;">
+      <!-- Luxury Gold Glow Effects -->
+      <div style="position:absolute;top:-150px;right:-150px;width:600px;height:600px;background:radial-gradient(circle,rgba(212,175,55,0.15),transparent 70%);border-radius:50%;filter:blur(60px);z-index:0;"></div>
+      <div style="position:absolute;bottom:-100px;left:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(181,141,31,0.1),transparent 70%);border-radius:50%;filter:blur(60px);z-index:0;"></div>
+      
+      <!-- Premium Dark Grid Pattern Overlay -->
+      <div style="position:absolute;top:0;left:0;right:0;bottom:0;background-image:linear-gradient(#111 1px, transparent 1px), linear-gradient(90deg, #111 1px, transparent 1px);background-size:40px 40px;opacity:0.5;z-index:0;"></div>
+
+      <div class="container" style="position:relative;z-index:1;max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+        <div>
+          <span style="display:inline-block;padding:8px 24px;background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);color:#d4af37;border-radius:30px;font-size:13px;font-weight:800;letter-spacing:2px;margin-bottom:30px;text-transform:uppercase;backdrop-filter:blur(5px);">
+            🌿 The Essence of Purity
+          </span>
+          <h1 style="font-size:68px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:24px;letter-spacing:-1px;">
+            Niksa Bilona <span style="background:linear-gradient(135deg, #f3e5ab, #d4af37);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 2px 10px rgba(212,175,55,0.2);">Gold</span>
+          </h1>
+          <p style="font-size:20px;color:#a3a3a3;line-height:1.7;margin-bottom:46px;max-width:580px;font-weight:400;">
+            Experience the authentic taste of tradition with our pure A2 Desi Cow Ghee. Hand-churned using the ancient Vedic Bilona method to bring unparalleled health and wellness to your family.
+          </p>
+          <div style="display:flex;gap:20px;align-items:center;">
+            <a href="index.html#categories" style="display:inline-flex;align-items:center;justify-content:center;padding:18px 46px;background:linear-gradient(135deg,#d4af37,#b58d1f);color:#0a0a0a;text-decoration:none;border-radius:30px;font-weight:900;font-size:16px;text-transform:uppercase;letter-spacing:1px;transition:all .3s ease;box-shadow:0 10px 30px rgba(212,175,55,.3);" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 15px 40px rgba(212,175,55,.4)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 10px 30px rgba(212,175,55,.3)';">
+              Shop Now
+            </a>
+            <a href="index.html#about" style="display:inline-flex;align-items:center;justify-content:center;padding:18px 46px;background:transparent;border:2px solid #d4af37;color:#d4af37;text-decoration:none;border-radius:30px;font-weight:800;font-size:16px;text-transform:uppercase;letter-spacing:1px;transition:all .3s ease;" onmouseover="this.style.background='rgba(212,175,55,0.1)';" onmouseout="this.style.background='transparent';">
+              Discover Bilona
+            </a>
+          </div>
+          
+          <div style="margin-top:48px;display:flex;gap:30px;border-top:1px solid #222;padding-top:30px;">
+            <div>
+              <h4 style="color:#d4af37;font-size:24px;font-weight:900;margin-bottom:5px;">100%</h4>
+              <p style="color:#737373;font-size:14px;margin:0;text-transform:uppercase;letter-spacing:1px;font-weight:600;">Pure A2 Milk</p>
+            </div>
+            <div style="width:1px;background:#222;"></div>
+            <div>
+              <h4 style="color:#d4af37;font-size:24px;font-weight:900;margin-bottom:5px;">Vedic</h4>
+              <p style="color:#737373;font-size:14px;margin:0;text-transform:uppercase;letter-spacing:1px;font-weight:600;">Bilona Method</p>
+            </div>
+            <div style="width:1px;background:#222;"></div>
+            <div>
+              <h4 style="color:#d4af37;font-size:24px;font-weight:900;margin-bottom:5px;">Farm</h4>
+              <p style="color:#737373;font-size:14px;margin:0;text-transform:uppercase;letter-spacing:1px;font-weight:600;">To Home</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="position:relative;">
+          <!-- Premium Hero Image Presentation -->
+          <div style="position:relative;z-index:2;border-radius:24px;background:linear-gradient(145deg, #1a1a1a, #0a0a0a);border:1px solid #333;padding:20px;box-shadow:0 30px 60px rgba(0,0,0,0.8);text-align:center; overflow:hidden;">
+            <div id="heroImageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+              <div class="carousel-inner" style="border-radius:16px;">
+                <div class="carousel-item active">
+                  <img src="images/pic1.png" class="d-block w-100" alt="NiksaMart Premium Product 1" style="height:450px;object-fit:cover;filter:drop-shadow(0 20px 30px rgba(212,175,55,0.15));">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/pic2.png" class="d-block w-100" alt="NiksaMart Premium Product 2" style="height:450px;object-fit:cover;filter:drop-shadow(0 20px 30px rgba(212,175,55,0.15));">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/pic3.png" class="d-block w-100" alt="NiksaMart Premium Product 3" style="height:450px;object-fit:cover;filter:drop-shadow(0 20px 30px rgba(212,175,55,0.15));">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/pic4.png" class="d-block w-100" alt="NiksaMart Premium Product 4" style="height:450px;object-fit:cover;filter:drop-shadow(0 20px 30px rgba(212,175,55,0.15));">
+                </div>
+              </div>
+              <!-- Carousel Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#heroImageCarousel" data-bs-slide="prev" style="opacity:1;">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:rgba(212,175,55,0.8);border-radius:50%;width:40px;height:40px;background-size:20px;border:2px solid #0a0a0a;"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#heroImageCarousel" data-bs-slide="next" style="opacity:1;">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color:rgba(212,175,55,0.8);border-radius:50%;width:40px;height:40px;background-size:20px;border:2px solid #0a0a0a;"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+            <!-- Floating Badge -->
+            <div style="position:absolute;top:-10px;right:-10px;background:linear-gradient(135deg, #d4af37, #b58d1f);color:#0a0a0a;width:100px;height:100px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;text-align:center;line-height:1.2;box-shadow:0 10px 20px rgba(212,175,55,0.3);border:4px solid #0a0a0a;transform:rotate(10deg);z-index:3;">
+              100%<br>Natural
+            </div>
+          </div>
+          <!-- Decorative Background Element -->
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:110%;height:110%;border:2px dashed rgba(212,175,55,0.2);border-radius:50%;z-index:1;animation:spin 60s linear infinite;"></div>
+          <style>@keyframes spin { 100% { transform:translate(-50%,-50%) rotate(360deg); } }</style>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR STORY SECTION -->
+    <section class="about-section" id="about" style="background:#111;padding:120px 40px;position:relative;border-bottom:1px solid #222;">
+      <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 80% 50%, rgba(212,175,55,0.05), transparent 60%);pointer-events:none;"></div>
+      <div style="max-width:1400px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+        <div style="position:relative;">
+          <div style="position:relative;z-index:2;border-radius:24px;overflow:hidden;border:1px solid #333;box-shadow:0 30px 60px rgba(0,0,0,0.6);">
+            <img src="images/brand-story.jpg" alt="NiksaMart Traditional Bilona Process" style="width:100%;height:auto;display:block;" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNzAwIiB2aWV3Qm94PSIwIDAgNjAwIDcwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFhMWExYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNkNGFmMzciIHRleHQtYW5jaG9yPSJtaWRkbGUiPueQuiB0cmFkaXRpb25hbF9wcm9jZXNzLmpwZzwvdGV4dD48L3N2Zz4='">
+          </div>
+          <div style="position:absolute;bottom:-30px;right:-30px;background:linear-gradient(135deg, #1a1a1a, #0a0a0a);border:1px solid #333;padding:30px;border-radius:20px;z-index:3;box-shadow:0 20px 40px rgba(0,0,0,0.5);">
+            <div style="display:flex;align-items:center;gap:20px;">
+              <div style="font-size:48px;font-weight:900;color:#d4af37;line-height:1;">10+</div>
+              <div style="color:#a3a3a3;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:1px;line-height:1.4;">Years of<br>Purity &amp;<br>Trust</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <span style="display:inline-block;color:#d4af37;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;">🏛️ Our Heritage</span>
+          <h2 style="font-size:46px;font-weight:900;color:#fff;margin-bottom:30px;line-height:1.2;">Rooted in Tradition, Crafted for Wellness</h2>
+          <p style="color:#a3a3a3;font-size:18px;line-height:1.8;margin-bottom:20px;">NiksaMart brings you the finest selection of premium Indian wellness products. Our flagship <strong style="color:#d4af37;font-weight:700;">Niksa Bilona Gold</strong> A2 Ghee is a testament to our commitment to absolute purity and health.</p>
+          <p style="color:#a3a3a3;font-size:18px;line-height:1.8;margin-bottom:40px;">We source directly from traditional farms, employing ancient Vedic methods to preserve the natural nutrients and authentic taste that modern processing often destroys.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:40px;">
+            <div>
+              <div style="width:50px;height:50px;border-radius:50%;background:rgba(212,175,55,0.1);display:flex;align-items:center;justify-content:center;color:#d4af37;font-size:24px;margin-bottom:16px;border:1px solid rgba(212,175,55,0.3);">🌱</div>
+              <h4 style="color:#fff;font-size:18px;font-weight:700;margin-bottom:10px;">100% Organic</h4>
+              <p style="color:#737373;font-size:14px;margin:0;line-height:1.6;">No chemicals, no preservatives. Just pure nature.</p>
+            </div>
+            <div>
+              <div style="width:50px;height:50px;border-radius:50%;background:rgba(212,175,55,0.1);display:flex;align-items:center;justify-content:center;color:#d4af37;font-size:24px;margin-bottom:16px;border:1px solid rgba(212,175,55,0.3);">⚱️</div>
+              <h4 style="color:#fff;font-size:18px;font-weight:700;margin-bottom:10px;">Vedic Bilona</h4>
+              <p style="color:#737373;font-size:14px;margin:0;line-height:1.6;">Hand-churned in earthen pots using wooden dashers.</p>
+            </div>
+          </div>
+          <a href="about.html" style="display:inline-block;padding:16px 36px;border:2px solid #d4af37;color:#d4af37;text-decoration:none;border-radius:30px;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:1px;transition:all .3s ease;" onmouseover="this.style.background='#d4af37';this.style.color='#0a0a0a';" onmouseout="this.style.background='transparent';this.style.color='#d4af37';">Read Our Full Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREMIUM COLLECTIONS SECTION -->
+    <section id="categories" style="padding:120px 40px;background:#050505;overflow:hidden;position:relative;">
+      <div style="max-width:1400px;margin:auto;margin-bottom:80px;text-align:center;">
+        <span style="display:inline-block;color:#d4af37;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;">🛍️ Discover Wellness</span>
+        <h2 style="font-size:52px;font-weight:900;color:#ffffff;margin-bottom:20px;">NiksaMart Premium Collections</h2>
+        <p style="font-size:18px;color:#a3a3a3;line-height:1.7;max-width:800px;margin:auto;">Explore our carefully curated selection of traditional Indian health foods and natural wellness products.</p>
+      </div>
+
+      <div style="max-width:1400px;margin:auto;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:40px;padding:0 20px;">
+          <!-- Category 1 -->
+          <div class="cat-card" role="button" tabindex="0" onclick="window.location='shop.html?category=ghee'" style="padding:42px;background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);border:1px solid #333;border-radius:24px;box-shadow:0 20px 40px rgba(0,0,0,0.5);transition:all 0.4s ease;cursor:pointer;position:relative;overflow:hidden;text-align:center;" onmouseover="this.style.transform='translateY(-12px)';this.style.borderColor='#d4af37';this.style.boxShadow='0 30px 60px rgba(212,175,55,0.1)';" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='#333';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.5)';">
+            <div style="font-size:60px;margin-bottom:20px;">🐄</div>
+            <h3 style="color:#d4af37;margin-bottom:16px;font-size:24px;font-weight:800;">A2 Bilona Ghee</h3>
+            <p style="color:#a3a3a3;font-size:15px;line-height:1.6;">100% pure Desi Cow Ghee made with the traditional Vedic method.</p>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="cat-card" role="button" tabindex="0" onclick="window.location='shop.html?category=honey'" style="padding:42px;background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);border:1px solid #333;border-radius:24px;box-shadow:0 20px 40px rgba(0,0,0,0.5);transition:all 0.4s ease;cursor:pointer;position:relative;overflow:hidden;text-align:center;" onmouseover="this.style.transform='translateY(-12px)';this.style.borderColor='#d4af37';this.style.boxShadow='0 30px 60px rgba(212,175,55,0.1)';" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='#333';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.5)';">
+            <div style="font-size:60px;margin-bottom:20px;">🍯</div>
+            <h3 style="color:#d4af37;margin-bottom:16px;font-size:24px;font-weight:800;">Raw Forest Honey</h3>
+            <p style="color:#a3a3a3;font-size:15px;line-height:1.6;">Unprocessed, unpasteurized honey sourced from deep Indian forests.</p>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="cat-card" role="button" tabindex="0" onclick="window.location='shop.html?category=oils'" style="padding:42px;background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);border:1px solid #333;border-radius:24px;box-shadow:0 20px 40px rgba(0,0,0,0.5);transition:all 0.4s ease;cursor:pointer;position:relative;overflow:hidden;text-align:center;" onmouseover="this.style.transform='translateY(-12px)';this.style.borderColor='#d4af37';this.style.boxShadow='0 30px 60px rgba(212,175,55,0.1)';" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='#333';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.5)';">
+            <div style="font-size:60px;margin-bottom:20px;">🫒</div>
+            <h3 style="color:#d4af37;margin-bottom:16px;font-size:24px;font-weight:800;">Cold Pressed Oils</h3>
+            <p style="color:#a3a3a3;font-size:15px;line-height:1.6;">Nutrient-rich, wood-pressed oils extracted without heat or chemicals.</p>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="cat-card" role="button" tabindex="0" onclick="window.location='shop.html?category=dryfruits'" style="padding:42px;background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);border:1px solid #333;border-radius:24px;box-shadow:0 20px 40px rgba(0,0,0,0.5);transition:all 0.4s ease;cursor:pointer;position:relative;overflow:hidden;text-align:center;" onmouseover="this.style.transform='translateY(-12px)';this.style.borderColor='#d4af37';this.style.boxShadow='0 30px 60px rgba(212,175,55,0.1)';" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='#333';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.5)';">
+            <div style="font-size:60px;margin-bottom:20px;">🥜</div>
+            <h3 style="color:#d4af37;margin-bottom:16px;font-size:24px;font-weight:800;">Organic Dry Fruits</h3>
+            <p style="color:#a3a3a3;font-size:15px;line-height:1.6;">Premium quality nuts and dried fruits for a healthy snacking alternative.</p>
+          </div>
+
+          <!-- Category 5 -->
+          <div class="cat-card" role="button" tabindex="0" onclick="window.location='shop.html?category=ayurvedic'" style="padding:42px;background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);border:1px solid #333;border-radius:24px;box-shadow:0 20px 40px rgba(0,0,0,0.5);transition:all 0.4s ease;cursor:pointer;position:relative;overflow:hidden;text-align:center;" onmouseover="this.style.transform='translateY(-12px)';this.style.borderColor='#d4af37';this.style.boxShadow='0 30px 60px rgba(212,175,55,0.1)';" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='#333';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.5)';">
+            <div style="font-size:60px;margin-bottom:20px;">🌿</div>
+            <h3 style="color:#d4af37;margin-bottom:16px;font-size:24px;font-weight:800;">Ayurvedic Wellness</h3>
+            <p style="color:#a3a3a3;font-size:15px;line-height:1.6;">Traditional herbal supplements and superfoods for holistic health.</p>
+          </div>
+
+          <!-- Category 6 -->
+          <div class="cat-card" role="button" tabindex="0" onclick="window.location='shop.html?category=snacks'" style="padding:42px;background:linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);border:1px solid #333;border-radius:24px;box-shadow:0 20px 40px rgba(0,0,0,0.5);transition:all 0.4s ease;cursor:pointer;position:relative;overflow:hidden;text-align:center;" onmouseover="this.style.transform='translateY(-12px)';this.style.borderColor='#d4af37';this.style.boxShadow='0 30px 60px rgba(212,175,55,0.1)';" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='#333';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.5)';">
+            <div style="font-size:60px;margin-bottom:20px;">🌾</div>
+            <h3 style="color:#d4af37;margin-bottom:16px;font-size:24px;font-weight:800;">Healthy Snacks</h3>
+            <p style="color:#a3a3a3;font-size:15px;line-height:1.6;">Guilt-free, natural snacking options crafted from farm-fresh ingredients.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section style="background:#1a1a1a;border-bottom:1px solid #333;padding:40px 0;">
+      <div class="container-fluid">
+        <div class="row text-center" style="gap:20px 0;">
+          <div class="col-md-3 col-6">
+            <div style="font-size:32px;color:#d4af37;margin-bottom:10px;">🧪</div>
+            <h4 style="color:#fff;font-size:16px;font-weight:700;">Lab Tested</h4>
+            <p style="color:#a3a3a3;font-size:13px;margin:0;">100% Quality Assured</p>
+          </div>
+          <div class="col-md-3 col-6">
+            <div style="font-size:32px;color:#d4af37;margin-bottom:10px;">🐄</div>
+            <h4 style="color:#fff;font-size:16px;font-weight:700;">Cruelty Free</h4>
+            <p style="color:#a3a3a3;font-size:13px;margin:0;">Ethically Sourced Milk</p>
+          </div>
+          <div class="col-md-3 col-6">
+            <div style="font-size:32px;color:#d4af37;margin-bottom:10px;">📦</div>
+            <h4 style="color:#fff;font-size:16px;font-weight:700;">Glass Packaging</h4>
+            <p style="color:#a3a3a3;font-size:13px;margin:0;">No Plastic Contamination</p>
+          </div>
+          <div class="col-md-3 col-6">
+            <div style="font-size:32px;color:#d4af37;margin-bottom:10px;">🚚</div>
+            <h4 style="color:#fff;font-size:16px;font-weight:700;">Pan-India Delivery</h4>
+            <p style="color:#a3a3a3;font-size:13px;margin:0;">Freshness Delivered Safely</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <div class="container-fluid" style="padding: 60px 20px; background: #050505;">
+        <div class="row"><div class="col-md-12">
+          <div class="section-header d-flex flex-wrap justify-content-between mb-5">
+            <h2 class="section-title" style="color:#d4af37; font-weight:800;">Customer Favorites</h2>
+            <div class="d-flex align-items-center" style="gap:20px;">
+              <a href="index.html#categories" class="btn btn-outline-dark btn-sm" style="border:2px solid #d4af37; color:#d4af37; padding:8px 16px; font-weight:bold; transition:all 0.3s;" onmouseover="this.style.background='#d4af37';this.style.color='#0a0a0a';" onmouseout="this.style.background='transparent';this.style.color='#d4af37';">View All Products →</a>
+              <div class="swiper-buttons d-flex gap-2">
+                <button class="brand-carousel-prev" style="background:#1a1a1a; border:1px solid #333; color:#d4af37; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer;" aria-label="Previous">❮</button>
+                <button class="brand-carousel-next" style="background:#1a1a1a; border:1px solid #333; color:#d4af37; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer;" aria-label="Next">❯</button>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <div class="row"><div class="col-md-12">
+          <div class="brand-carousel swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><div class="card mb-3 p-3 shadow border-0" style="background:#111; border-radius:16px; border:1px solid #333 !important;"><div class="row g-0 align-items-center"><div class="col-md-4"><div style="background:linear-gradient(145deg,#1a1a1a,#0a0a0a); border-radius:12px; padding:10px; text-align:center;"><span style="font-size:40px;">🍯</span></div></div><div class="col-md-8"><div class="card-body py-0"><p style="color:#d4af37; font-size:12px; font-weight:700; margin-bottom:5px; text-transform:uppercase;">Raw & Unfiltered</p><h5 style="color:#fff; font-weight:700; font-size:16px;">Wild Forest Honey</h5></div></div></div></div></div>
+              <div class="swiper-slide"><div class="card mb-3 p-3 shadow border-0" style="background:#111; border-radius:16px; border:1px solid #333 !important;"><div class="row g-0 align-items-center"><div class="col-md-4"><div style="background:linear-gradient(145deg,#1a1a1a,#0a0a0a); border-radius:12px; padding:10px; text-align:center;"><span style="font-size:40px;">🐄</span></div></div><div class="col-md-8"><div class="card-body py-0"><p style="color:#d4af37; font-size:12px; font-weight:700; margin-bottom:5px; text-transform:uppercase;">Vedic Process</p><h5 style="color:#fff; font-weight:700; font-size:16px;">A2 Desi Cow Ghee</h5></div></div></div></div></div>
+              <div class="swiper-slide"><div class="card mb-3 p-3 shadow border-0" style="background:#111; border-radius:16px; border:1px solid #333 !important;"><div class="row g-0 align-items-center"><div class="col-md-4"><div style="background:linear-gradient(145deg,#1a1a1a,#0a0a0a); border-radius:12px; padding:10px; text-align:center;"><span style="font-size:40px;">🫒</span></div></div><div class="col-md-8"><div class="card-body py-0"><p style="color:#d4af37; font-size:12px; font-weight:700; margin-bottom:5px; text-transform:uppercase;">Wood Pressed</p><h5 style="color:#fff; font-weight:700; font-size:16px;">Yellow Mustard Oil</h5></div></div></div></div></div>
+              <div class="swiper-slide"><div class="card mb-3 p-3 shadow border-0" style="background:#111; border-radius:16px; border:1px solid #333 !important;"><div class="row g-0 align-items-center"><div class="col-md-4"><div style="background:linear-gradient(145deg,#1a1a1a,#0a0a0a); border-radius:12px; padding:10px; text-align:center;"><span style="font-size:40px;">🌿</span></div></div><div class="col-md-8"><div class="card-body py-0"><p style="color:#d4af37; font-size:12px; font-weight:700; margin-bottom:5px; text-transform:uppercase;">Ayurvedic Blend</p><h5 style="color:#fff; font-weight:700; font-size:16px;">Immunity Booster</h5></div></div></div></div></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <!-- Signature Products -->
+    <section class="py-5" style="background:#0a0a0a;" id="shop">
+      <div class="container-fluid">
+        <div class="row"><div class="col-md-12">
+          <div class="bootstrap-tabs product-tabs">
+            <div class="tabs-header d-flex justify-content-between border-bottom border-dark my-5" style="border-color:#333 !important;">
+              <h3 style="color:#fff;font-weight:900;">Signature Products</h3>
+              <nav aria-label="Product category tabs">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist" style="border:none;">
+                  <a href="#nav-all" class="nav-link text-uppercase fs-6 active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true" style="color:#d4af37;background:transparent;border:none;border-bottom:2px solid #d4af37;font-weight:700;">All</a>
+                  <a href="#nav-ghee" class="nav-link text-uppercase fs-6" id="nav-ghee-tab" data-bs-toggle="tab" data-bs-target="#nav-ghee" role="tab" aria-controls="nav-ghee" aria-selected="false" style="color:#a3a3a3;background:transparent;border:none;">A2 Ghee</a>
+                  <a href="#nav-honey" class="nav-link text-uppercase fs-6" id="nav-honey-tab" data-bs-toggle="tab" data-bs-target="#nav-honey" role="tab" aria-controls="nav-honey" aria-selected="false" style="color:#a3a3a3;background:transparent;border:none;">Honey</a>
+                </div>
+              </nav>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+                <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                  <!-- Product 1 -->
+                  <div class="col"><div class="product-item" style="background:#111;border:1px solid #333;border-radius:16px;padding:20px;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af37';this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='#333';this.style.transform='translateY(0)';">
+                    <button class="btn-wishlist" aria-label="Add to wishlist" style="background:#1a1a1a;border:1px solid #333;color:#d4af37;"><svg width="24" height="24" aria-hidden="true"><use xlink:href="#heart"></use></svg></button>
+                    <figure style="background:linear-gradient(145deg, #1a1a1a, #0a0a0a);border-radius:12px;padding:20px;text-align:center;"><a href="product.html" title="Niksa Bilona Gold A2 Ghee 500ml"><img src="images/ghee-500.png" loading="lazy" class="tab-image" alt="Niksa Bilona Gold A2 Ghee 500ml" style="max-height:200px;object-fit:contain;filter:drop-shadow(0 10px 15px rgba(212,175,55,0.1));" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFhMWExYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNkNGFmMzciIHRleHQtYW5jaG9yPSJtaWRkbGUiPkdoZWUgNTAwbWw8L3RleHQ+PC9zdmc+'"></a></figure>
+                    <h3 style="color:#fff;font-size:18px;margin-top:15px;">Niksa Bilona Gold A2 Ghee</h3>
+                    <span class="qty" style="color:#a3a3a3;">500ml Glass Jar</span><span class="rating" style="color:#d4af37;"><svg width="24" height="24" aria-hidden="true"><use xlink:href="#star-solid"></use></svg> 4.9</span>
+                    <span class="price" style="color:#d4af37;font-size:22px;font-weight:800;">₹1,499</span>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty" style="width:100px;">
+                        <span class="input-group-btn"><button type="button" class="quantity-left-minus btn btn-number" data-type="minus" style="background:#1a1a1a;color:#fff;border:1px solid #333;" aria-label="Decrease quantity"><svg width="12" height="12" aria-hidden="true"><use xlink:href="#minus"></use></svg></button></span>
+                        <input type="number" id="qty-ghee500" name="quantity" class="form-control input-number" value="1" min="1" style="background:#0a0a0a;color:#fff;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:none;text-align:center;" aria-label="Quantity">
+                        <span class="input-group-btn"><button type="button" class="quantity-right-plus btn btn-number" data-type="plus" style="background:#1a1a1a;color:#fff;border:1px solid #333;" aria-label="Increase quantity"><svg width="12" height="12" aria-hidden="true"><use xlink:href="#plus"></use></svg></button></span>
+                      </div>
+                      <a href="#" class="nav-link" style="background:linear-gradient(135deg, #d4af37, #b58d1f);color:#0a0a0a;padding:8px 16px;border-radius:8px;font-weight:700;">Add <iconify-icon icon="uil:shopping-cart" aria-hidden="true"></iconify-icon></a>
+                    </div>
+                  </div></div>
+
+                  <!-- Product 2 -->
+                  <div class="col"><div class="product-item" style="background:#111;border:1px solid #333;border-radius:16px;padding:20px;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af37';this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='#333';this.style.transform='translateY(0)';">
+                    <span class="badge position-absolute m-3" style="background:#d4af37;color:#0a0a0a;font-weight:800;">Bestseller</span>
+                    <button class="btn-wishlist" aria-label="Add to wishlist" style="background:#1a1a1a;border:1px solid #333;color:#d4af37;"><svg width="24" height="24" aria-hidden="true"><use xlink:href="#heart"></use></svg></button>
+                    <figure style="background:linear-gradient(145deg, #1a1a1a, #0a0a0a);border-radius:12px;padding:20px;text-align:center;"><a href="product.html" title="Niksa Bilona Gold A2 Ghee 1L"><img src="images/ghee-1l.png" loading="lazy" class="tab-image" alt="Niksa Bilona Gold A2 Ghee 1L" style="max-height:200px;object-fit:contain;filter:drop-shadow(0 10px 15px rgba(212,175,55,0.1));" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFhMWExYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNkNGFmMzciIHRleHQtYW5jaG9yPSJtaWRkbGUiPkdoZWUgMUw8L3RleHQ+PC9zdmc+'"></a></figure>
+                    <h3 style="color:#fff;font-size:18px;margin-top:15px;">Niksa Bilona Gold A2 Ghee</h3>
+                    <span class="qty" style="color:#a3a3a3;">1L Glass Jar</span><span class="rating" style="color:#d4af37;"><svg width="24" height="24" aria-hidden="true"><use xlink:href="#star-solid"></use></svg> 5.0</span>
+                    <span class="price" style="color:#d4af37;font-size:22px;font-weight:800;">₹2,899</span>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty" style="width:100px;">
+                        <span class="input-group-btn"><button type="button" class="quantity-left-minus btn btn-number" data-type="minus" style="background:#1a1a1a;color:#fff;border:1px solid #333;" aria-label="Decrease quantity"><svg width="12" height="12" aria-hidden="true"><use xlink:href="#minus"></use></svg></button></span>
+                        <input type="number" id="qty-ghee1l" name="quantity" class="form-control input-number" value="1" min="1" style="background:#0a0a0a;color:#fff;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:none;text-align:center;" aria-label="Quantity">
+                        <span class="input-group-btn"><button type="button" class="quantity-right-plus btn btn-number" data-type="plus" style="background:#1a1a1a;color:#fff;border:1px solid #333;" aria-label="Increase quantity"><svg width="12" height="12" aria-hidden="true"><use xlink:href="#plus"></use></svg></button></span>
+                      </div>
+                      <a href="#" class="nav-link" style="background:linear-gradient(135deg, #d4af37, #b58d1f);color:#0a0a0a;padding:8px 16px;border-radius:8px;font-weight:700;">Add <iconify-icon icon="uil:shopping-cart" aria-hidden="true"></iconify-icon></a>
+                    </div>
+                  </div></div>
+
+                  <!-- Product 3 -->
+                  <div class="col"><div class="product-item" style="background:#111;border:1px solid #333;border-radius:16px;padding:20px;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af37';this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='#333';this.style.transform='translateY(0)';">
+                    <button class="btn-wishlist" aria-label="Add to wishlist" style="background:#1a1a1a;border:1px solid #333;color:#d4af37;"><svg width="24" height="24" aria-hidden="true"><use xlink:href="#heart"></use></svg></button>
+                    <figure style="background:linear-gradient(145deg, #1a1a1a, #0a0a0a);border-radius:12px;padding:20px;text-align:center;"><a href="product.html" title="Raw Forest Honey"><img src="images/honey-raw.png" loading="lazy" class="tab-image" alt="Raw Forest Honey" style="max-height:200px;object-fit:contain;filter:drop-shadow(0 10px 15px rgba(212,175,55,0.1));" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFhMWExYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNkNGFmMzciIHRleHQtYW5jaG9yPSJtaWRkbGUiPkhvbmV5PC90ZXh0Pjwvc3ZnPg=='"></a></figure>
+                    <h3 style="color:#fff;font-size:18px;margin-top:15px;">Wild Raw Forest Honey</h3>
+                    <span class="qty" style="color:#a3a3a3;">500g Glass Jar</span><span class="rating" style="color:#d4af37;"><svg width="24" height="24" aria-hidden="true"><use xlink:href="#star-solid"></use></svg> 4.8</span>
+                    <span class="price" style="color:#d4af37;font-size:22px;font-weight:800;">₹599</span>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty" style="width:100px;">
+                        <span class="input-group-btn"><button type="button" class="quantity-left-minus btn btn-number" data-type="minus" style="background:#1a1a1a;color:#fff;border:1px solid #333;" aria-label="Decrease quantity"><svg width="12" height="12" aria-hidden="true"><use xlink:href="#minus"></use></svg></button></span>
+                        <input type="number" id="qty-honey500" name="quantity" class="form-control input-number" value="1" min="1" style="background:#0a0a0a;color:#fff;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:none;text-align:center;" aria-label="Quantity">
+                        <span class="input-group-btn"><button type="button" class="quantity-right-plus btn btn-number" data-type="plus" style="background:#1a1a1a;color:#fff;border:1px solid #333;" aria-label="Increase quantity"><svg width="12" height="12" aria-hidden="true"><use xlink:href="#plus"></use></svg></button></span>
+                      </div>
+                      <a href="#" class="nav-link" style="background:linear-gradient(135deg, #d4af37, #b58d1f);color:#0a0a0a;padding:8px 16px;border-radius:8px;font-weight:700;">Add <iconify-icon icon="uil:shopping-cart" aria-hidden="true"></iconify-icon></a>
+                    </div>
+                  </div></div>
+
+                  <!-- Product 4 -->
+                  <div class="col"><div class="product-item" style="background:#111;border:1px solid #333;border-radius:16px;padding:20px;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af37';this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='#333';this.style.transform='translateY(0)';">
+                    <button class="btn-wishlist" aria-label="Add to wishlist" style="background:#1a1a1a;border:1px solid #333;color:#d4af37;"><svg width="24" height="24" aria-hidden="true"><use xlink:href="#heart"></use></svg></button>
+                    <figure style="background:linear-gradient(145deg, #1a1a1a, #0a0a0a);border-radius:12px;padding:20px;text-align:center;"><a href="product.html" title="Wood Pressed Mustard Oil"><img src="images/oil-mustard.png" loading="lazy" class="tab-image" alt="Wood Pressed Mustard Oil" style="max-height:200px;object-fit:contain;filter:drop-shadow(0 10px 15px rgba(212,175,55,0.1));" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFhMWExYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNkNGFmMzciIHRleHQtYW5jaG9yPSJtaWRkbGUiPk11c3RhcmQgT2lsPC90ZXh0Pjwvc3ZnPg=='"></a></figure>
+                    <h3 style="color:#fff;font-size:18px;margin-top:15px;">Wood Pressed Mustard Oil</h3>
+                    <span class="qty" style="color:#a3a3a3;">1L Bottle</span><span class="rating" style="color:#d4af37;"><svg width="24" height="24" aria-hidden="true"><use xlink:href="#star-solid"></use></svg> 4.7</span>
+                    <span class="price" style="color:#d4af37;font-size:22px;font-weight:800;">₹399</span>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty" style="width:100px;">
+                        <span class="input-group-btn"><button type="button" class="quantity-left-minus btn btn-number" data-type="minus" style="background:#1a1a1a;color:#fff;border:1px solid #333;" aria-label="Decrease quantity"><svg width="12" height="12" aria-hidden="true"><use xlink:href="#minus"></use></svg></button></span>
+                        <input type="number" id="qty-oil1l" name="quantity" class="form-control input-number" value="1" min="1" style="background:#0a0a0a;color:#fff;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:none;text-align:center;" aria-label="Quantity">
+                        <span class="input-group-btn"><button type="button" class="quantity-right-plus btn btn-number" data-type="plus" style="background:#1a1a1a;color:#fff;border:1px solid #333;" aria-label="Increase quantity"><svg width="12" height="12" aria-hidden="true"><use xlink:href="#plus"></use></svg></button></span>
+                      </div>
+                      <a href="#" class="nav-link" style="background:linear-gradient(135deg, #d4af37, #b58d1f);color:#0a0a0a;padding:8px 16px;border-radius:8px;font-weight:700;">Add <iconify-icon icon="uil:shopping-cart" aria-hidden="true"></iconify-icon></a>
+                    </div>
+                  </div></div>
+
+                  <!-- Product 5 -->
+                  <div class="col"><div class="product-item" style="background:#111;border:1px solid #333;border-radius:16px;padding:20px;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af37';this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='#333';this.style.transform='translateY(0)';">
+                    <button class="btn-wishlist" aria-label="Add to wishlist" style="background:#1a1a1a;border:1px solid #333;color:#d4af37;"><svg width="24" height="24" aria-hidden="true"><use xlink:href="#heart"></use></svg></button>
+                    <figure style="background:linear-gradient(145deg, #1a1a1a, #0a0a0a);border-radius:12px;padding:20px;text-align:center;"><a href="product.html" title="Premium Kashmiri Walnuts"><img src="images/walnuts.png" loading="lazy" class="tab-image" alt="Premium Kashmiri Walnuts" style="max-height:200px;object-fit:contain;filter:drop-shadow(0 10px 15px rgba(212,175,55,0.1));" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFhMWExYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNkNGFmMzciIHRleHQtYW5jaG9yPSJtaWRkbGUiPldhbG51dHM8L3RleHQ+PC9zdmc+'"></a></figure>
+                    <h3 style="color:#fff;font-size:18px;margin-top:15px;">Premium Kashmiri Walnuts</h3>
+                    <span class="qty" style="color:#a3a3a3;">250g Pack</span><span class="rating" style="color:#d4af37;"><svg width="24" height="24" aria-hidden="true"><use xlink:href="#star-solid"></use></svg> 4.9</span>
+                    <span class="price" style="color:#d4af37;font-size:22px;font-weight:800;">₹449</span>
+                    <div class="d-flex align-items-center justify-content-between mt-3">
+                      <div class="input-group product-qty" style="width:100px;">
+                        <span class="input-group-btn"><button type="button" class="quantity-left-minus btn btn-number" data-type="minus" style="background:#1a1a1a;color:#fff;border:1px solid #333;" aria-label="Decrease quantity"><svg width="12" height="12" aria-hidden="true"><use xlink:href="#minus"></use></svg></button></span>
+                        <input type="number" id="qty-walnut250" name="quantity" class="form-control input-number" value="1" min="1" style="background:#0a0a0a;color:#fff;border-top:1px solid #333;border-bottom:1px solid #333;border-left:none;border-right:none;text-align:center;" aria-label="Quantity">
+                        <span class="input-group-btn"><button type="button" class="quantity-right-plus btn btn-number" data-type="plus" style="background:#1a1a1a;color:#fff;border:1px solid #333;" aria-label="Increase quantity"><svg width="12" height="12" aria-hidden="true"><use xlink:href="#plus"></use></svg></button></span>
+                      </div>
+                      <a href="#" class="nav-link" style="background:linear-gradient(135deg, #d4af37, #b58d1f);color:#0a0a0a;padding:8px 16px;border-radius:8px;font-weight:700;">Add <iconify-icon icon="uil:shopping-cart" aria-hidden="true"></iconify-icon></a>
+                    </div>
+                  </div></div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-ghee" role="tabpanel" aria-labelledby="nav-ghee-tab">
+                <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                  <div class="col"><div class="product-item" style="background:#111;border:1px solid #333;border-radius:16px;padding:20px;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af37';this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='#333';this.style.transform='translateY(0)';">
+                    <figure style="background:linear-gradient(145deg, #1a1a1a, #0a0a0a);border-radius:12px;padding:20px;text-align:center;"><a href="inquiry.html"><img src="images/ghee-1l.png" loading="lazy" class="tab-image" alt="Niksa Bilona Gold A2 Ghee 1L" style="max-height:200px;object-fit:contain;filter:drop-shadow(0 10px 15px rgba(212,175,55,0.1));" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFhMWExYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNkNGFmMzciIHRleHQtYW5jaG9yPSJtaWRkbGUiPkdoZWUgMUw8L3RleHQ+PC9zdmc+'"></a></figure>
+                    <h3 style="color:#fff;font-size:18px;margin-top:15px;">Niksa Bilona Gold A2 Ghee 1L</h3>
+                    <span class="price" style="color:#d4af37;font-size:22px;font-weight:800;">₹2,899</span>
+                  </div></div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="nav-honey" role="tabpanel" aria-labelledby="nav-honey-tab">
+                <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                  <div class="col"><div class="product-item" style="background:#111;border:1px solid #333;border-radius:16px;padding:20px;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af37';this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='#333';this.style.transform='translateY(0)';">
+                    <figure style="background:linear-gradient(145deg, #1a1a1a, #0a0a0a);border-radius:12px;padding:20px;text-align:center;"><a href="inquiry.html"><img src="images/honey-raw.png" loading="lazy" class="tab-image" alt="Raw Forest Honey" style="max-height:200px;object-fit:contain;filter:drop-shadow(0 10px 15px rgba(212,175,55,0.1));" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzFhMWExYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNkNGFmMzciIHRleHQtYW5jaG9yPSJtaWRkbGUiPkhvbmV5PC90ZXh0Pjwvc3ZnPg=='"></a></figure>
+                    <h3 style="color:#fff;font-size:18px;margin-top:15px;">Wild Raw Forest Honey 500g</h3>
+                    <span class="price" style="color:#d4af37;font-size:22px;font-weight:800;">₹599</span>
+                  </div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Subscribe CTA -->
+    <section class="subscribe-cta-section" style="background:linear-gradient(135deg, #111, #050505);padding:80px 0;border-top:1px solid #333;border-bottom:1px solid #333;">
+      <div class="container">
+        <div class="subscribe-card" style="background:#0a0a0a;border:1px solid #333;box-shadow:0 20px 50px rgba(0,0,0,0.5);border-radius:24px;padding:50px;">
+          <div class="subscribe-left">
+            <span class="subscribe-badge" style="background:rgba(212,175,55,0.1);color:#d4af37;padding:6px 12px;border-radius:20px;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1px;border:1px solid rgba(212,175,55,0.3);">Join NiksaMart Community</span>
+            <h2 class="subscribe-title" style="color:#fff;font-size:36px;font-weight:900;margin-top:20px;">Unlock Premium Wellness</h2>
+            <p class="subscribe-subtext" style="color:#a3a3a3;font-size:16px;line-height:1.6;margin-top:15px;">Subscribe to our newsletter for exclusive offers, early access to new products, and traditional health insights.</p>
+          </div>
+          <div class="subscribe-right" style="margin-top:30px;">
+            <form class="subscribe-form" id="subscribeForm" novalidate style="display:flex;gap:15px;">
+              <input type="email" class="subscribe-input" id="subscribeEmail" placeholder="Enter your email address" aria-label="Email address" required style="background:#111;border:1px solid #333;color:#fff;padding:15px 25px;border-radius:30px;flex:1;outline:none;">
+              <button class="btn btn-subscribe" type="submit" style="background:linear-gradient(135deg, #d4af37, #b58d1f);color:#0a0a0a;border:none;padding:15px 35px;border-radius:30px;font-weight:800;text-transform:uppercase;letter-spacing:1px;transition:all 0.3s ease;">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Wellness Insights & Blog -->
+    <section id="blog" style="padding:100px 0;background:#050505;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="section-header d-flex align-items-center justify-content-between mb-5">
+            <h2 style="font-size:42px;font-weight:900;color:#fff;">Wellness Insights</h2>
+            <div class="btn-wrap"><a href="blog.html" style="color:#d4af37;text-decoration:none;font-weight:700;display:flex;align-items:center;gap:8px;">Read All Articles <svg width="24" height="24" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg></a></div>
+          </div>
+        </div>
+        <div class="row" style="gap:40px 0;">
+          <!-- Article 1 -->
+          <div class="col-md-4">
+            <article class="post-item" style="background:#111;border:1px solid #333;border-radius:20px;overflow:hidden;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af37';this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='#333';this.style.transform='translateY(0)';">
+              <div class="image-holder" style="overflow:hidden;"><a href="inquiry.html"><img src="images/post-thumb-1.jpg" loading="lazy" alt="A2 Bilona Ghee Benefits" style="width:100%;height:220px;object-fit:cover;transition:transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';"></a></div>
+              <div style="padding:30px;">
+                <div style="display:flex;gap:15px;color:#d4af37;font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:15px;letter-spacing:1px;">
+                  <div><svg width="14" height="14" aria-hidden="true"><use xlink:href="#calendar"></use></svg> 12 Mar 2025</div>
+                  <div><svg width="14" height="14" aria-hidden="true"><use xlink:href="#category"></use></svg> Health</div>
+                </div>
+                <h3 style="font-size:22px;font-weight:800;line-height:1.4;margin-bottom:15px;"><a href="blog.html" style="color:#fff;text-decoration:none;transition:color 0.3s ease;" onmouseover="this.style.color='#d4af37';" onmouseout="this.style.color='#fff';">Why A2 Bilona Ghee is the Ultimate Superfood</a></h3>
+                <p style="color:#a3a3a3;font-size:15px;line-height:1.6;margin:0;">Discover the science and ancient wisdom behind traditional A2 Bilona Ghee and its incredible benefits for digestion and immunity.</p>
+              </div>
+            </article>
+          </div>
+          <!-- Article 2 -->
+          <div class="col-md-4">
+            <article class="post-item" style="background:#111;border:1px solid #333;border-radius:20px;overflow:hidden;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af37';this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='#333';this.style.transform='translateY(0)';">
+              <div class="image-holder" style="overflow:hidden;"><a href="inquiry.html"><img src="images/post-thumb-2.jpg" loading="lazy" alt="Raw Honey vs Processed Honey" style="width:100%;height:220px;object-fit:cover;transition:transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';"></a></div>
+              <div style="padding:30px;">
+                <div style="display:flex;gap:15px;color:#d4af37;font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:15px;letter-spacing:1px;">
+                  <div><svg width="14" height="14" aria-hidden="true"><use xlink:href="#calendar"></use></svg> 18 Mar 2025</div>
+                  <div><svg width="14" height="14" aria-hidden="true"><use xlink:href="#category"></use></svg> Nutrition</div>
+                </div>
+                <h3 style="font-size:22px;font-weight:800;line-height:1.4;margin-bottom:15px;"><a href="blog.html" style="color:#fff;text-decoration:none;transition:color 0.3s ease;" onmouseover="this.style.color='#d4af37';" onmouseout="this.style.color='#fff';">The Hidden Truth: Raw Honey vs Processed Honey</a></h3>
+                <p style="color:#a3a3a3;font-size:15px;line-height:1.6;margin:0;">Are you getting the real benefits of honey? Learn how commercial processing destroys vital enzymes and why raw honey is essential.</p>
+              </div>
+            </article>
+          </div>
+          <!-- Article 3 -->
+          <div class="col-md-4">
+            <article class="post-item" style="background:#111;border:1px solid #333;border-radius:20px;overflow:hidden;transition:all 0.3s ease;" onmouseover="this.style.borderColor='#d4af37';this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='#333';this.style.transform='translateY(0)';">
+              <div class="image-holder" style="overflow:hidden;"><a href="inquiry.html"><img src="images/post-thumb-3.jpg" loading="lazy" alt="Cold Pressed Oils Benefits" style="width:100%;height:220px;object-fit:cover;transition:transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';"></a></div>
+              <div style="padding:30px;">
+                <div style="display:flex;gap:15px;color:#d4af37;font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:15px;letter-spacing:1px;">
+                  <div><svg width="14" height="14" aria-hidden="true"><use xlink:href="#calendar"></use></svg> 25 Mar 2025</div>
+                  <div><svg width="14" height="14" aria-hidden="true"><use xlink:href="#category"></use></svg> Cooking</div>
+                </div>
+                <h3 style="font-size:22px;font-weight:800;line-height:1.4;margin-bottom:15px;"><a href="blog.html" style="color:#fff;text-decoration:none;transition:color 0.3s ease;" onmouseover="this.style.color='#d4af37';" onmouseout="this.style.color='#fff';">Why You Should Switch to Cold Pressed Oils</a></h3>
+                <p style="color:#a3a3a3;font-size:15px;line-height:1.6;margin:0;">Refined oils carry harmful trans-fats. Switch to cold-pressed and wood-pressed oils to maintain heart health and nutrient integrity.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 my-5">
+      <div class="container-fluid">
+        <div class="py-5 rounded-5" style="background:linear-gradient(135deg, #111, #0a0a0a); border:1px solid #333; box-shadow:0 15px 30px rgba(0,0,0,0.5);">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-4 text-center"><img src="images/phone.png" loading="lazy" alt="NiksaMart App" class="img-fluid" style="filter:drop-shadow(0 20px 30px rgba(212,175,55,0.2)); max-height:400px; transform:translateY(-20px);"></div>
+              <div class="col-md-8">
+                <h2 style="color:#fff;font-size:36px;font-weight:900;margin-bottom:20px;">Experience Premium Wellness on the Go</h2>
+                <p style="color:#a3a3a3;font-size:18px;line-height:1.6;margin-bottom:30px;">Shop our exclusive Niksa Bilona Gold products, track your orders in real-time, and get personalized health insights directly from the NiksaMart App. Download today for a 10% welcome discount.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                  <a href="#" style="transition:transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';"><img src="images/app-store.jpg" loading="lazy" alt="Download on App Store" width="135" height="40" style="border-radius:8px;"></a>
+                  <a href="#" style="transition:transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';"><img src="images/google-play.jpg" loading="lazy" alt="Get it on Google Play" width="135" height="40" style="border-radius:8px;"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Trust Badges -->
+    <section class="py-5" style="background:#0a0a0a; border-top:1px solid #333; border-bottom:1px solid #333;">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5 text-center">
+          <div class="col"><div class="card mb-3 border-0 bg-transparent"><div class="card-body"><div class="text-warning mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d4af37" d="M21.5 15a3 3 0 0 0-1.9-2.78l1.87-7a1 1 0 0 0-.18-.87A1 1 0 0 0 20.5 4H6.8l-.33-1.26A1 1 0 0 0 5.5 2h-2v2h1.23l2.48 9.26a1 1 0 0 0 1 .74H18.5a1 1 0 0 1 0 2h-13a1 1 0 0 0 0 2h1.18a3 3 0 1 0 5.64 0h2.36a3 3 0 1 0 5.82 1a2.94 2.94 0 0 0-.4-1.47A3 3 0 0 0 21.5 15Zm-3.91-3H9L7.34 6H19.2ZM9.5 20a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm8 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></svg></div><h5 style="color:#fff;font-weight:700;">Fast Delivery</h5><p style="color:#a3a3a3;font-size:14px;">Reliable pan-India delivery.</p></div></div></div>
+          <div class="col"><div class="card mb-3 border-0 bg-transparent"><div class="card-body"><div class="text-warning mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d4af37" d="M19.63 3.65a1 1 0 0 0-.84-.2a8 8 0 0 1-6.22-1.27a1 1 0 0 0-1.14 0a8 8 0 0 1-6.22 1.27a1 1 0 0 0-.84.2a1 1 0 0 0-.37.78v7.45a9 9 0 0 0 3.77 7.33l3.65 2.6a1 1 0 0 0 1.16 0l3.65-2.6A9 9 0 0 0 20 11.88V4.43a1 1 0 0 0-.37-.78Z"/></svg></div><h5 style="color:#fff;font-weight:700;">100% Pure</h5><p style="color:#a3a3a3;font-size:14px;">Authentic, unadulterated products.</p></div></div></div>
+          <div class="col"><div class="card mb-3 border-0 bg-transparent"><div class="card-body"><div class="text-warning mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d4af37" d="M22 5H2a1 1 0 0 0-1 1v4a3 3 0 0 0 2 2.82V22a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9.18A3 3 0 0 0 23 10V6a1 1 0 0 0-1-1Z"/></svg></div><h5 style="color:#fff;font-weight:700;">Lab Tested</h5><p style="color:#a3a3a3;font-size:14px;">Every batch is certified for quality.</p></div></div></div>
+          <div class="col"><div class="card mb-3 border-0 bg-transparent"><div class="card-body"><div class="text-warning mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d4af37" d="M12 8.35a3.07 3.07 0 0 0-3.54.53a3 3 0 0 0 0 4.24L11.29 16a1 1 0 0 0 1.42 0l2.83-2.83a3 3 0 0 0 0-4.24A3.07 3.07 0 0 0 12 8.35Z"/></svg></div><h5 style="color:#fff;font-weight:700;">Ethically Sourced</h5><p style="color:#a3a3a3;font-size:14px;">Supporting traditional farming.</p></div></div></div>
+          <div class="col"><div class="card mb-3 border-0 bg-transparent"><div class="card-body"><div class="text-warning mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d4af37" d="M18 7h-.35A3.45 3.45 0 0 0 18 5.5a3.49 3.49 0 0 0-6-2.44A3.49 3.49 0 0 0 6 5.5A3.45 3.45 0 0 0 6.35 7H6a3 3 0 0 0-3 3v2a1 1 0 0 0 1 1h1v6a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-6h1a1 1 0 0 0 1-1v-2a3 3 0 0 0-3-3Z"/></svg></div><h5 style="color:#fff;font-weight:700;">24/7 Support</h5><p style="color:#a3a3a3;font-size:14px;">Always here to help you.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-menu">
+              <img src="images/logo.png" loading="lazy" alt="NIKSAMART Logo" width="160" height="45">
+              <div class="social-links mt-5">
+                <ul class="d-flex list-unstyled gap-2">
+                  <li><a href="https://facebook.com/niksamart" class="btn btn-outline-light" aria-label="Follow on Facebook" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.12 5.32H17V2.14A26.11 26.11 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73Z"/></svg></a></li>
+                  <li><a href="https://twitter.com/niksamart" class="btn btn-outline-light" aria-label="Follow on Twitter" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22.991 3.95a1 1 0 0 0-1.51-.86a7.48 7.48 0 0 1-1.874.794a5.152 5.152 0 0 0-3.374-1.242a5.232 5.232 0 0 0-5.223 5.063a11.032 11.032 0 0 1-6.814-3.924a1.012 1.012 0 0 0-.857-.365a.999.999 0 0 0-.785.5a5.276 5.276 0 0 0-.242 4.769l-.002.001a1.041 1.041 0 0 0-.496.89a3.042 3.042 0 0 0 .027.439a5.185 5.185 0 0 0 1.568 3.312a.998.998 0 0 0-.066.77a5.204 5.204 0 0 0 2.362 2.922a7.465 7.465 0 0 1-3.59.448A1 1 0 0 0 1.45 19.3a12.942 12.942 0 0 0 7.01 2.061a12.788 12.788 0 0 0 12.465-9.363a12.822 12.822 0 0 0 .535-3.646l-.001-.2a5.77 5.77 0 0 0 1.532-4.202Z"/></svg></a></li>
+                  <li><a href="https://youtube.com/niksamart" class="btn btn-outline-light" aria-label="Watch on YouTube" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23 9.71a8.5 8.5 0 0 0-.91-4.13a2.92 2.92 0 0 0-1.72-1A78.36 78.36 0 0 0 12 4.27a78.45 78.45 0 0 0-8.34.3a2.87 2.87 0 0 0-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 0 0 0 6.48a9.55 9.55 0 0 0 .3 2a3.14 3.14 0 0 0 .71 1.36a2.86 2.86 0 0 0 1.49.78a45.18 45.18 0 0 0 6.5.33c3.5.05 6.57 0 10.2-.28a2.88 2.88 0 0 0 1.53-.78a2.49 2.49 0 0 0 .61-1a10.58 10.58 0 0 0 .52-3.4c.04-.56.04-3.94.04-4.54ZM9.74 14.85V8.66l5.92 3.11c-1.66.92-3.85 1.96-5.92 3.08Z"/></svg></a></li>
+                  <li><a href="https://instagram.com/niksamart" class="btn btn-outline-light" aria-label="Follow on Instagram" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.34 5.46a1.2 1.2 0 1 0 1.2 1.2a1.2 1.2 0 0 0-1.2-1.2Zm4.6 2.42a7.59 7.59 0 0 0-.46-2.43a4.94 4.94 0 0 0-1.16-1.77a4.7 4.7 0 0 0-1.77-1.15a7.3 7.3 0 0 0-2.43-.47C15.06 2 14.72 2 12 2s-3.06 0-4.12.06a7.3 7.3 0 0 0-2.43.47a4.78 4.78 0 0 0-1.77 1.15a4.7 4.7 0 0 0-1.15 1.77a7.3 7.3 0 0 0-.47 2.43C2 8.94 2 9.28 2 12s0 3.06.06 4.12a7.3 7.3 0 0 0 .47 2.43a4.7 4.7 0 0 0 1.15 1.77a4.78 4.78 0 0 0 1.77 1.15a7.3 7.3 0 0 0 2.43.47C8.94 22 9.28 22 12 22s3.06 0 4.12-.06a7.3 7.3 0 0 0 2.43-.47a4.7 4.7 0 0 0 1.77-1.15a4.85 4.85 0 0 0 1.16-1.77a7.59 7.59 0 0 0 .46-2.43c0-1.06.06-1.4.06-4.12s0-3.06-.06-4.12ZM12 15.33A3.33 3.33 0 1 1 15.33 12A3.33 3.33 0 0 1 12 15.33Z"/></svg></a></li>
+                  <li><a href="https://linkedin.com/company/niksamart" class="btn btn-outline-light" aria-label="Connect on LinkedIn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M1.04 17.52q.1-.16.32-.02a21.308 21.308 0 0 0 10.88 2.9a21.524 21.524 0 0 0 7.74-1.46q.1-.04.29-.12t.27-.12a.356.356 0 0 1 .47.12Z"/></svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-sm-6">
+            <div class="footer-menu">
+              <h5 class="widget-title">NiksaMart</h5>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item"><a href="about.html" class="nav-link">Our Heritage</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">Quality Standards</a></li>
+                <li class="menu-item"><a href="index.html#blog" class="nav-link">Wellness Journal</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">Sustainability</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <div class="footer-menu">
+              <h5 class="widget-title">Customer Care</h5>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item"><a href="#" class="nav-link">Track Order</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">Shipping Policy</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">Returns & Refunds</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">FAQs</a></li>
+                <li class="menu-item"><a href="inquiry.html" class="nav-link">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <div class="footer-menu">
+              <h5 class="widget-title">Shop</h5>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item"><a href="#" class="nav-link">All Products</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">A2 Bilona Ghee</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">Raw Honey</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">Wood Pressed Oils</a></li>
+                <li class="menu-item"><a href="#" class="nav-link">Gift Sets</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-menu">
+              <h5 class="widget-title">Newsletter</h5>
+              <p>Join our wellness journey for health tips, exclusive offers, and product updates.</p>
+              <form class="d-flex mt-3 gap-0" id="footerNewsletterForm" novalidate>
+                <input class="form-control rounded-start rounded-0 bg-light" type="email" id="footerEmail" placeholder="Email Address" aria-label="Email address" required>
+                <button class="btn btn-dark rounded-end rounded-0" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="footer-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 copyright">
+            <p>© 2025 NIKSAMART. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 credit-link text-start text-md-end">
+            <p>Premium Wellness & Heritage Products | <a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a> | <a href="#">Sitemap</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery removed — script.js rewritten in vanilla JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/plugins.js" defer></script>
+    <script src="js/script.js" defer></script>
+
+    <script>
+      // =============================================
+      // ✅ B2B Trade Search - Improved & Extended
+      // =============================================
+      const searchDatabase = {
+        'ghee': ['🐄 A2 Bilona Ghee 500ml', '🐄 A2 Bilona Ghee 1L', '🐄 Niksa Bilona Gold Ghee', '🐄 Organic Desi Ghee'],
+        'honey': ['🍯 Raw Forest Honey 500g', '🍯 Wild Raw Honey', '🍯 Organic Honey', '🍯 Manuka Honey'],
+        'oil': ['🫒 Cold Pressed Mustard Oil', '🫒 Wood Pressed Coconut Oil', '🫒 Cold Pressed Groundnut Oil', '🫒 Sesame Oil'],
+        'dry fruit': ['🥜 Premium Kashmiri Walnuts', '🥜 Organic Almonds', '🥜 Dry Dates', '🥜 Figs'],
+        'walnut': ['🥜 Premium Kashmiri Walnuts', '🥜 Walnut Kernels', '🥜 Organic Walnuts'],
+        'almond': ['🥜 Organic Almonds', '🥜 Badam Giri', '🥜 California Almonds'],
+        'ayurvedic': ['🌿 Ayurvedic Wellness Kit', '🌿 Herbal Supplements', '🌿 Triphala Powder', '🌿 Ashwagandha'],
+        'tea': ['🍵 Herbal Tea Collection', '🍵 Green Tea', '🍵 Tulsi Tea', '🍵 Detox Tea'],
+        'wellness': ['🌿 Wellness Gift Set', '🌿 Immunity Booster', '🌿 Daily Wellness Kit', '🌿 Superfood Mix'],
+        'mustard': ['🫒 Wood Pressed Mustard Oil', '🫒 Yellow Mustard Oil', '🫒 Cold Pressed Mustard'],
+        'coconut': ['🥥 Virgin Coconut Oil', '🥥 Cold Pressed Coconut Oil', '🥥 Organic Coconut'],
+        'snack': ['🌾 Healthy Snack Mix', '🌾 Makhana Roasted', '🌾 Seed Mix'],
+        'makhana': ['🌾 Roasted Makhana', '🌾 Fox Nut Snacks'],
+        'gift': ['🎁 Wellness Gift Box', '🎁 Premium Gift Set', '🎁 Corporate Gift Pack'],
+        'organic': ['🌱 Organic A2 Ghee', '🌱 Organic Raw Honey', '🌱 Organic Dry Fruits', '🌱 Organic Spices'],
+        'default': ['🐄 A2 Bilona Ghee 500ml', '🐄 A2 Bilona Ghee 1L', '🍯 Raw Forest Honey 500g', '🫒 Cold Pressed Mustard Oil', '🥜 Premium Kashmiri Walnuts', '🌿 Ayurvedic Wellness Kit', '🎁 Wellness Gift Box', '🌱 Organic Superfoods']
+      };
+
+      const searchInput = document.getElementById('search-input');
+      const suggestionBox = document.getElementById('search-suggestions');
+
+      function findSuggestions(value) {
+        if (!value.trim()) return searchDatabase['default'];
+        const v = value.toLowerCase().trim();
+        for (const [key, items] of Object.entries(searchDatabase)) {
+          if (key !== 'default' && v.includes(key)) return items;
+        }
+        const matched = [];
+        for (const items of Object.values(searchDatabase)) {
+          for (const item of items) {
+            if (item.toLowerCase().includes(v)) matched.push(item);
+          }
+        }
+        return matched.length > 0 ? matched.slice(0, 7) : searchDatabase['default'];
+      }
+
+      function showSuggestions(items) {
+        if (!suggestionBox || !items.length) { if(suggestionBox) suggestionBox.style.display = 'none'; return; }
+        suggestionBox.innerHTML = items.map((item, i) => `
+          <div role="option" id="suggestion-${i}" style="padding:12px 20px;cursor:pointer;border-bottom:1px solid #f3f4f6;transition:background 0.2s;color:#374151;font-size:14px;"
+               onmouseover="this.style.backgroundColor='#f3f4f6'"
+               onmouseout="this.style.backgroundColor='white'"
+               onclick="selectSuggestion('${item.replace(/'/g, "\\'").replace(/<[^>]*>/g,'')}')"
+               onkeypress="if(event.key==='Enter')selectSuggestion('${item.replace(/'/g, "\\'").replace(/<[^>]*>/g,'')}')"
+               tabindex="0">${item}</div>
+        `).join('');
+        suggestionBox.style.display = 'block';
+      }
+
+      function selectSuggestion(text) {
+        if (searchInput) { searchInput.value = text; suggestionBox.style.display = 'none'; searchInput.focus(); }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('focus', () => showSuggestions(searchDatabase['default']));
+        searchInput.addEventListener('input', function() { showSuggestions(findSuggestions(this.value)); });
+        searchInput.addEventListener('blur', () => setTimeout(() => { suggestionBox.style.display = 'none'; }, 200));
+        searchInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') { suggestionBox.style.display = 'none'; }
+        });
+      }
+
+      document.addEventListener('click', (e) => {
+        if (suggestionBox && e.target !== searchInput && !suggestionBox.contains(e.target)) {
+          suggestionBox.style.display = 'none';
+        }
+      });
+
+      // =============================================
+      // ✅ Back to Top Button
+      // =============================================
+      const backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('show', window.scrollY > 400);
+      });
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // =============================================
+      // ✅ Toast Notification Helper
+      // =============================================
+      function showToast(message, color = '#10b981') {
+        const t = document.getElementById('toastNotify');
+        t.textContent = message;
+        t.style.background = color;
+        t.classList.add('show');
+        setTimeout(() => t.classList.remove('show'), 3000);
+      }
+
+      // =============================================
+      // ✅ Subscribe Form Validation
+      // =============================================
+      function validateEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      document.getElementById('subscribeForm')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('subscribeEmail').value.trim();
+        if (!validateEmail(email)) {
+          showToast('⚠️ Please enter a valid business email.', '#dc2626');
+          return;
+        }
+        showToast('✅ Subscribed! You will receive trade updates soon.');
+        this.reset();
+      });
+
+      document.getElementById('footerNewsletterForm')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('footerEmail').value.trim();
+        if (!validateEmail(email)) {
+          showToast('⚠️ Please enter a valid email address.', '#dc2626');
+          return;
+        }
+        showToast('✅ Subscribed to NIKSAMART Trade Newsletter!');
+        this.reset();
+      });
+
+      // =============================================
+      // ✅ Wishlist Button Click — Quick Feedback
+      // =============================================
+      document.querySelectorAll('.btn-wishlist').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const svg = this.querySelector('svg');
+          if (svg) svg.style.color = '#ef4444';
+          showToast('❤️ Added to Wishlist!');
+        });
+      });
+
+      // =============================================
+      // ✅ Quantity Buttons — Fix for +/- controls
+      // =============================================
+      document.querySelectorAll('.quantity-right-plus').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const input = this.closest('.product-qty').querySelector('.input-number');
+          if (input) input.value = Math.max(1, parseInt(input.value || 1) + 1);
+        });
+      });
+
+      document.querySelectorAll('.quantity-left-minus').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const input = this.closest('.product-qty').querySelector('.input-number');
+          if (input) input.value = Math.max(1, parseInt(input.value || 1) - 1);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+export default function Loader() { return <div className="min-h-[50vh] grid place-items-center"><div className="text-center"><div className="mx-auto h-14 w-14 rounded-full border-4 border-navy border-t-gold animate-spin" /><p className="mt-4 font-heading text-2xl text-navy">Niksa Mart</p></div></div>; }

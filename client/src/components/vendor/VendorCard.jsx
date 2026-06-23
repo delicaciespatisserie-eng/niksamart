@@ -1,0 +1,1 @@
+export default function VendorCard({ title, value, caption }) { return <div className="card p-5"><p className="text-sm text-gray-500">{title}</p><h3 className="mt-2 text-3xl font-extrabold text-navy">{value}</h3><p className="mt-1 text-sm text-gold">{caption}</p></div>; }

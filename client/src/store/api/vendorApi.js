@@ -1,0 +1,4 @@
+import { createApi } from '@reduxjs/toolkit/query/react';
+import { baseQueryWithReauth } from './base';
+export const vendorApi = createApi({ reducerPath: 'vendorApi', baseQuery: baseQueryWithReauth, tagTypes: ['Vendor'], endpoints: (b) => ({ dashboard: b.query({ query: () => '/vendor/dashboard', providesTags: ['Vendor'] }), vendorProducts: b.query({ query: () => '/vendor/products', providesTags: ['Vendor'] }), vendorOrders: b.query({ query: () => '/vendor/orders', providesTags: ['Vendor'] }), vendorEarnings: b.query({ query: () => '/vendor/earnings', providesTags: ['Vendor'] }), adminStats: b.query({ query: () => '/admin/stats' }), adminVendors: b.query({ query: () => '/admin/vendors' }), adminOrders: b.query({ query: () => '/admin/orders' }) }) });
+export const { useDashboardQuery, useVendorProductsQuery, useVendorOrdersQuery, useVendorEarningsQuery, useAdminStatsQuery, useAdminVendorsQuery, useAdminOrdersQuery } = vendorApi;
